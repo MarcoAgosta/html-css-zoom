@@ -13,6 +13,7 @@
     width: 100vw;
     background-color: black;
     position: relative;
+    overflow: auto;
 }
 
 /* Parte chiamata */
@@ -21,6 +22,8 @@
     flex-grow: 1;
     position: relative;
     overflow: auto;
+    align-items: center;
+    justify-items: center;
 }
 
 .top-buttons{
@@ -39,23 +42,15 @@
 }
 
 .conteiner{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
     justify-content: space-around;
     z-index: 1;
-
 }
 
 .item{
     position: relative;
     margin: 2px 0;
-    width: 15%;
-    height: 250px;
 }
 
 .foto{
@@ -79,6 +74,7 @@ footer{
     display: flex;
     z-index: 10;
     background-color: darkgray;
+    flex-shrink: 0;
     overflow: auto;
 }
 
@@ -86,7 +82,7 @@ footer{
     display: flex;
     background-color: darkgray;
     padding: 30px;
-    min-width: 400px;
+    flex-shrink: 0;
 }
 
 .centro{
@@ -100,10 +96,9 @@ footer{
 
 .destra{
     display: flex;
-    min-width: 400px;
-
+    min-width: 300px;
     justify-content: flex-end;
-
+    flex-shrink: 0;
 }
 
 .complesso-button button{
